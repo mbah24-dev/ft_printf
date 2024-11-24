@@ -9,7 +9,7 @@ For the ft_printf project of the 42 school cursus, we must recreate the famous C
 - Supported conversions: %, c, s, p, i, d, u, x, X
 
 ## Status
-Finished: 2022-02-07. Grade: 100/100.
+Finished: 2024-11-27. Grade: 100/100.
 
 ## Usage
 
