@@ -13,7 +13,7 @@ Finished: 2024-11-27. Grade: 100/100.
 
 ## Usage
 
-``make`` or ``make bonus`` to compile.
+``make`` to compile.
 
 ### Basic Usage
 For example, let's create a ``main.c`` file.
