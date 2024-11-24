@@ -41,10 +41,6 @@ Testing ft_printf!
 
 ### Advanced Usage: Format Specifiers
 
-This ft_printf function supports several format specifiers, described below.
-These are optional, can be used in any combination, and are implemented as:
-<code>%[flags][width][.precision]specifier</code>
-
 The table below lists supported format specifiers:
 <table>
     <thead>
