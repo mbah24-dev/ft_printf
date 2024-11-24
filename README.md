@@ -25,7 +25,8 @@ For example, let's create a ``main.c`` file.
 int main(void)
 {
       // Call the function
-      ft_printf("Testing ft_printf!");
+      ft_printf("Testing ft_printf! %d", 42);
+      ft_printf("Testing ft_printf! %X", 255);
       return (0);
 }
 ```
@@ -36,7 +37,8 @@ gcc main.c libftprintf.a && ./a.out
 ```
 Output should be:
 ```
-Testing ft_printf!
+Testing ft_printf! 42
+Testing ft_printf! FF
 ```
 
 ### Advanced Usage: Format Specifiers
