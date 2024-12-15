@@ -6,7 +6,7 @@
 /*   By: mbah <mbah@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:14:54 by mbah              #+#    #+#             */
-/*   Updated: 2024/11/22 14:13:33 by mbah             ###   ########.fr       */
+/*   Updated: 2024/12/15 15:07:16 by mbah             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,10 +40,12 @@ int	ft_printf(const char *format, ...)
 	int		i;
 	t_flags	flag;
 
-	i = 0;
+	i = -1;
 	size = 0;
+	if (format == NULL)
+		return (-1);
 	va_start(params, format);
-	while (format[i])
+	while (format[++i])
 	{
 		if (format[i] == '%' && ft_iscflags(format[i + 1]))
 		{
@@ -56,8 +58,6 @@ int	ft_printf(const char *format, ...)
 			ft_putchar_fd(format[i], 1);
 			size += 1;
 		}
-		i += 1;
 	}
-	va_end(params);
-	return (size);
+	return (va_end(params), size);
 }
